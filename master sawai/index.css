@@ -188,4 +188,7 @@ main {
         opacity: 1; /* 끝날 때 불투명 */
     }
 }
+#typing-effect .btn {
+    margin-top: 150px; /* 버튼 위쪽에 60px의 마진 추가 */
+}
 
