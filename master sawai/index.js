@@ -35,3 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const typingEffect = document.getElementById("typing-effect");
+    const textElements = Array.from(typingEffect.children); // h2와 p 태그 목록
+    const totalDuration = 10; // 전체 애니메이션 지속 시간 (초)
+    const delayPerElement = totalDuration / textElements.length; // 각 텍스트에 할당된 시간
+
+    textElements.forEach((element, index) => {
+        element.style.animation = `typing ${delayPerElement}s steps(${element.textContent.length}, end) forwards, blink 0.5s step-end infinite`;
+        element.style.animationDelay = `${index * delayPerElement}s`; // 순차적 딜레이
+    });
+});
