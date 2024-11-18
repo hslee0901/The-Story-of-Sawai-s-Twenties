@@ -138,16 +138,11 @@ main {
     flex: 1; /* 메인 콘텐츠는 남은 공간을 차지 */
     padding-top: 150px; /* 헤더 크기만큼 패딩 추가 */
     display: flex;
-}
-
-.blank-section {
-    flex: 2; /* 1의 비율을 할당 */
-    padding: 10px;
-    text-align: center; /* 가운데 정렬 */
+    padding : 20%;
 }
 
 .main-section {
-    flex: 6; /* 7의 비율을 할당 */
+    flex: 3; 
     padding: 10px;
 }
 
@@ -170,7 +165,7 @@ main {
 }
 
 .select-section {
-    flex: 2; /* 2의 비율을 할당 */
+    flex: 1; 
     padding: 10px;
     text-align: center; /* 가운데 정렬 */
 }
