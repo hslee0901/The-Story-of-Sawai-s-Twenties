@@ -265,6 +265,46 @@ main {
 
 
 
+/* 창 크기 줄 일때 조절 */
+@media (max-width: 1113px){
+    .main-background-img img {
+        width: auto; /* 이미지 너비 조정 */
+        height: 100%; /* 비율 유지 */
+    }
+    .profile-image img {
+        width: 100px; /* 프로필 이미지 크기 조정 */
+        height: 100px; /* 프로필 이미지 크기 조정 */
+        margin-top: 80px;
+    }
+}
+@media (max-width: 871px){
+    .overlay-text{
+        margin-top: 23px;
+    }
+    .overlay-text h2 {
+        font-size: 38px; /* 제목 크기 */
+    
+    }
+    
+    .overlay-text p {
+        font-size: 19px; /* 본문 크기 */
+        margin-top: 10px; /* 제목과 본문 간격 */
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 643px){
+    .overlay-text h2 {
+        font-size: 32px; /* 제목 크기 */
+    
+    }
+    
+    .overlay-text p {
+        font-size: 16px; /* 본문 크기 */
+        margin-top: 10px; /* 제목과 본문 간격 */
+        margin-bottom: 10px;
+    }
+}
+
 
 /* 모바일 버전 */
 @media (max-width: 480px) {
@@ -322,8 +362,8 @@ main {
     }
 
     .profile-image img {
-        width: 80px; /* 프로필 이미지 크기 조정 */
-        height: 80px; /* 프로필 이미지 크기 조정 */
+        width: 90px; /* 프로필 이미지 크기 조정 */
+        height: 90px; /* 프로필 이미지 크기 조정 */
         margin-top: 80px;
     }
     
