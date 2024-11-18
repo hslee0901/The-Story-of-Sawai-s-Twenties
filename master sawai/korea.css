@@ -196,7 +196,7 @@ main {
 }
 
 .main-section {
-    flex: 3; 
+    flex: 4; 
     padding: 10px;
 }
 
@@ -233,9 +233,42 @@ main {
 
 }
 
-.select-section {
-    flex: 1; /* 2의 비율을 할당 */
-    padding: 10px;
-    text-align: center; /* 가운데 정렬 */
+
+
+
+
+.sticky-bar {
+    flex: 1.2;
+    background-color: #ffffff;
+    color: white;
+    margin-left: 60px;
+    position: sticky;
+    top: 40%; /* 화면 중앙에 붙도록 설정 */
+    transform: translateY(-50%); /* 중앙 정렬을 위해 Y축으로 이동 */
+    height: 250px; /* 바의 높이 (필요에 따라 조정 가능) */
+    width: 400px; /* 바의 너비 */
+    z-index: 1000; /* 다른 요소 위에 표시되도록 */
+    font-size: 18px;
+    display: flex; /* 아이콘과 텍스트를 수평으로 정렬 */
+    flex-direction: column; /* 세로 방향으로 정렬 */
+ 
+   
 }
-/* 메인 끝 */
+.sticky-list {
+    display: block; /* 블록 요소로 설정 */
+    padding: 10px 10px; /* 패딩 추가 */
+    text-decoration: none; /* 링크의 기본 밑줄 제거 */
+    color: #007bff; /* 텍스트 색상을 파란색으로 변경 */
+    color: #333;
+}
+
+.sticky-list:hover {
+    background-color: #e2e6ea; /* 마우스 오버 시 배경색 변경 */
+}
+.sticky-list:not(:last-child) {
+    border-bottom: 0.5px solid gray; /* 마지막 요소를 제외한 각 요소 아래에 회색 선 추가 */
+}
+.sticky-list i {
+    margin-right: 5px; /* 아이콘과 텍스트 사이에 3px 마진 추가 */
+}
+
