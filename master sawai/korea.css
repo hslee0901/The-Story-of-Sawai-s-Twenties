@@ -141,14 +141,8 @@ main {
     padding : 20%;
 }
 
-.blank-section {
-    flex: 3; 
-    padding: 10px;
-    text-align: center; /* 가운데 정렬 */
-}
-
 .main-section {
-    flex: 6; /* 7의 비율을 할당 */
+    flex: 3; 
     padding: 10px;
 }
 
