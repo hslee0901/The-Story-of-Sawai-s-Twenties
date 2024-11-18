@@ -35,3 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+$(document).ready(function(){
+    $('.sticky-list').on('click', function(event) {
+        event.preventDefault(); // 기본 링크 동작 방지
+        var target = $(this).attr('href'); // 클릭한 링크의 href 속성 값
+        $('html, body').animate({
+            scrollTop: $(target).offset().top // 해당 ID로 스크롤
+        }, 500); // 500ms 동안 애니메이션
+    });
+});
