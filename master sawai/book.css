@@ -38,7 +38,61 @@ header.show {
 header:not(.show) {
     top: -100px; /* 헤더 높이만큼 숨김 */
 }
+/* 드롭다운 메뉴 스타일 */
+.dropdown {
+    display: none; /* 기본적으로 드롭다운 숨김 */
+    position: relative; /* 드롭다운 위치 설정 */
+}
 
+.dropdown-button {
+    background-color: #333333; /* 버튼 배경색 */
+    color: white; /* 버튼 텍스트 색상 */
+    padding: 8px 8px; /* 패딩 추가 */
+    border: none; /* 테두리 제거 */
+    cursor: pointer; /* 커서 포인터로 변경 */
+}
+
+/* 드롭다운 메뉴 항목 스타일 */
+.dropdown-content {
+    display: none; /* 기본적으로 드롭다운 내용 숨김 */
+    position: absolute; /* 절대 위치 설정 */
+    background-color: white; /* 배경색 */
+    min-width: 160px; /* 최소 너비 */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* 그림자 효과 */
+    z-index: 1; /* 다른 요소 위에 표시 */
+}
+
+.dropdown-content a {
+    color: black; /* 링크 색상 */
+    padding: 12px 16px; /* 패딩 추가 */
+    text-decoration: none; /* 밑줄 제거 */
+    display: block; /* 블록 요소로 설정 */
+}
+
+/* 드롭다운 메뉴 항목 호버 효과 */
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* 호버 시 배경색 변경 */
+}
+
+/* 드롭다운 버튼 클릭 시 드롭다운 내용 표시 */
+.dropdown-button:focus + .dropdown-content,
+.dropdown-content:hover {
+    display: block; /* 드롭다운 내용 표시 */
+}
+.dropdown-button:hover {
+    opacity: 0.8; /* 버튼을 눌렀을 때 투명도 설정 */
+}
+
+/* 미디어 쿼리: 화면 크기가 963px 이하일 때 */
+@media (max-width: 963px) {
+    .index-nav {
+        display: none; /* 기존 nav 숨김 */
+    }
+
+    .dropdown {
+        display: block; /* 드롭다운 표시 */
+    }
+}
 .index-nav {
     text-align: center; /* 중앙 정렬 */
     padding: 10px 0; /* 상하 패딩 */
