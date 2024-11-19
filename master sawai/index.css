@@ -266,7 +266,7 @@ main {
 
 
 /* 창 크기 줄 일때 조절 */
-@media (max-width: 1113px){
+@media (max-width: 1270px){
     .main-background-img img {
         width: auto; /* 이미지 너비 조정 */
         height: 100%; /* 비율 유지 */
