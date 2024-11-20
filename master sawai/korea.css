@@ -192,7 +192,9 @@ main {
     flex: 1; /* 메인 콘텐츠는 남은 공간을 차지 */
     padding-top: 150px; /* 헤더 크기만큼 패딩 추가 */
     display: flex;
-    padding : 20%;
+    padding : 10%;
+    margin-left: 150px;
+    margin-right: 70px;
 }
 
 .main-section {
@@ -204,7 +206,7 @@ main {
     font-size: 24px; /* 제목 크기 조정 */
     font-weight: bold; /* 굵은 글씨 */
     color: #333; /* 텍스트 색상 */
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom: 15px; /* 하단 여백 */
     text-align: left; /* 왼쪽 정렬 */
 }
@@ -212,7 +214,7 @@ main {
 .section-image1 {
     width: 100%; /* 이미지가 화면 너비를 꽉 채우도록 */
     height: auto; /* 비율에 맞춰 자동으로 높이 조정 */
-    margin: 10% 0; /* 이미지 위와 아래에 간격 추가 */
+    margin-top: 40px; /* 이미지 위와 아래에 간격 추가 */
     display: flexbox; /* 이미지가 블록 수준 요소로 다뤄지도록 */
     border-radius: 10px; /* 이미지 모서리 둥글게 처리 (선택 사항) */
 }
@@ -222,17 +224,16 @@ main {
     font-weight: bold; /* 굵은 글씨 */
     color: #333; /* 텍스트 색상 */
     text-align: left; /* 왼쪽 정렬 */
-    margin-top: 30px;
-    margin-bottom: 15px; /* 하단 여백 */
+    margin-top: 60px;
+    margin-bottom: 30px; /* 하단 여백 */
 }
 
 .main-section p {
     font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
 }
-
 
 
 
@@ -271,4 +272,5 @@ main {
 .sticky-list i {
     margin-right: 5px; /* 아이콘과 텍스트 사이에 3px 마진 추가 */
 }
+
 
