@@ -21,6 +21,7 @@ header {
     top: 0; /* 초기 위치 설정 */
     left: 0; /* 왼쪽에 고정 */
     width: 100%; 
+    transition: top 0.3s ease-in-out;
     z-index: 1000;
 }
 
@@ -218,4 +219,5 @@ main {
 
 .photo-section{
     flex: 1;
-}}
+}
+
