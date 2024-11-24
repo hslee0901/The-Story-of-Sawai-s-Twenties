@@ -215,6 +215,7 @@ main {
     width: 100%; /* 이미지가 화면 너비를 꽉 채우도록 */
     height: auto; /* 비율에 맞춰 자동으로 높이 조정 */
     margin-top: 40px; /* 이미지 위와 아래에 간격 추가 */
+    margin-bottom: 40px;
     display: flexbox; /* 이미지가 블록 수준 요소로 다뤄지도록 */
     border-radius: 10px; /* 이미지 모서리 둥글게 처리 (선택 사항) */
 }
@@ -232,8 +233,9 @@ main {
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 15px;
-
+    text-align: justify;
 }
+
 
 
 
