@@ -429,6 +429,9 @@ main {
     .overlay-text p {
         font-size: clamp(11px, 2vw + 1px, 15px); /* 본문 크기 조정 */
     }
+       header:not(.show) {
+        top: 0; /* 항상 보이도록 설정 */
+    }
 
     .profile-image img {
         width: 70px; /* 프로필 이미지 크기 조정 */
