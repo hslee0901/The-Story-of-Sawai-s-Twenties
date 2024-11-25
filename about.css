@@ -16,7 +16,8 @@ header {
     flex-direction: column; /* 세로 방향으로 정렬 */
     justify-content: center; 
     align-items: center; 
-    padding: 10px 20px; /* 패딩 추가 */
+
+
     width: 100%; 
     z-index: 1000;
 }
@@ -120,7 +121,7 @@ header {
 }
 
 /* 미디어 쿼리: 화면 크기가 963px 이하일 때 */
-@media (max-width: 1086px) {
+@media (max-width: 963px) {
     .index-nav {
         display: none; /* 기존 nav 숨김 */
     }
@@ -183,14 +184,10 @@ main {
     flex: 1; /* 메인 콘텐츠는 남은 공간을 차지 */
     padding-top: 30px; /* 헤더 크기만큼 패딩 추가 */
     display: flex;
-    padding: 50px;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-bottom: 40px;
-    margin-bottom: 0px;
-    
+    flex-direction: row; /* 기본적으로 가로 방향 배치 */
+    padding-left: 100px;
+    padding-right: 100px;
 }
-
 
 .main-section{
     flex: 3;
@@ -286,4 +283,181 @@ main {
 .blank{
     padding-top: 520px;
     font-size: 20px;
+}
+
+/* 모바일 버전 */
+/* 1270px 이하 */
+/* 기본 스타일 (1270px 이하 기본 구성) */
+@media (max-width: 1270px) {
+    main {
+        flex: 1;
+        padding: 30px;
+        margin: 20px auto;
+        max-width: 90%; /* 중앙에 배치 */
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* 콘텐츠를 중앙 정렬 */
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .photo-section {
+        margin-bottom: 20px; /* 아래 공간 추가 */
+        text-align: center; /* 텍스트 중앙 정렬 */
+    }
+
+    .column-word {
+        margin-top: 20px; /* 위쪽 여백 추가 */
+        font-size: 20px;
+        text-align: center; /* 텍스트 중앙 정렬 */
+    }
+}
+
+/* 963px 이하: 세로 정렬 시작 */
+@media (max-width: 1000px) {
+    header {
+        height: 130px; 
+
+    }
+    .index-logo h1 {
+        color: #333333;
+        font-size: clamp(28px, 4vw + 10px, 50px);
+    }
+    
+    main {
+        flex-direction: column; /* 세로 방향으로 정렬 */
+        padding: 20px; /* 패딩 조정 */
+        margin: 10px auto; /* 중앙 정렬 */
+        max-width: 100%; /* 화면에 맞게 너비 조정 */
+    }
+
+    .photo-section {
+        display: block; /* 블록 요소로 설정 */
+        margin: 0 auto 30px; /* 최상단 중앙 정렬 */
+        text-align: center; /* 텍스트 중앙 정렬 */
+    }
+    .career{
+        border-bottom: solid 1px #333333;
+    }
+    .main-section {
+        display: flex; /* Flexbox 활성화 */
+        flex-direction: column; /* 세로 정렬 */
+        align-items: center; /* 수평 정렬 중앙 */
+        width: 100%; /* 너비 조정 */
+    }
+
+    .profile, .career, .author {
+        margin-bottom: 20px; /* 섹션 간격 추가 */
+        text-align: center; /* 텍스트 정렬 */
+        width: 100%; /* 너비 조정 */
+    }
+
+    .column-word {
+        order: 1; /* 마지막에 배치 */
+        margin-top: 30px; /* 위쪽 여백 추가 */
+        font-size: 16px; /* 텍스트 크기 조정 */
+        text-align: center; /* 텍스트 중앙 정렬 */
+    }
+}
+
+
+/* 871px 이하: 더 작은 화면을 위한 조정 */
+@media (max-width: 871px) {
+    main {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    .photo-section {
+        margin: 0 auto 20px;
+    }
+
+    .main-section {
+        align-items: center;
+    }
+
+    .profile, .career, .author {
+        margin-bottom: 15px;
+        font-size: 14px; /* 텍스트 크기 축소 */
+    }
+
+    .column-word {
+        font-size: 24px;
+    }
+}
+
+/* 643px 이하: 모바일 친화적인 레이아웃 */
+@media (max-width: 643px) {
+    main {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .photo-section {
+        margin: 0 auto 20px;
+    }
+
+    .main-section {
+        align-items: center;
+    }
+
+    .profile, .career, .author {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .column-word {
+        font-size: 20px;
+        
+    }
+}
+@media (max-width: 480px) {
+
+    .column-word h2{
+        font-size: clamp(17px, 3vw + 1px, 24px);
+    }
+    .column-word p{
+        font-size: clamp(12px, 3vw + 1px, 18px);
+    }
+    .column-word{
+        height: 400px;
+    }
+    .blank{
+        padding-top: 340px;
+        font-size: 18px;
+        padding-left: 3px;
+    }
+}
+@media (max-width: 320px) {
+    .profile, .career, .author {
+        margin-bottom: 8px;
+        font-size: 12px; /* 텍스트 크기 축소 */
+    }
+    .column-word h2{
+        font-size: clamp(14px, 2vw + 1px, 16px);
+    }
+    .column-word p{
+        font-size: clamp(11px, 2vw + 1px, 12.5px);
+    }
+    .column-word{
+        height: 400px;
+    }
+    .blank{
+        padding-top: 340px;
+        font-size: 18px;
+        padding-left: 3px;
+    }
+    
+    footer p {
+        font-size: clamp(10px, 2vw, 12px); /* 푸터 텍스트 크기 조정 */
+        margin-bottom: 6px;
+    }
+    
+    .foot-i-circle {
+        font-size: clamp(10px, 2vw, 12px); /* 푸터 아이콘 크기 조정 */
+    }
+  
 }
