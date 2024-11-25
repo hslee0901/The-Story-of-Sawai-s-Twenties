@@ -416,13 +416,16 @@ main {
     #typing-effect .btn {
         margin-top: 80px; /* 버튼 위쪽에 60px의 마진 추가 */
     }
+      header:not(.show) {
+        top: 0; /* 항상 보이도록 설정 */
+    }
 }
 
 @media (max-width: 353px) {
     .overlay-text h2 {
         font-size: clamp(15px, 3vw + 1px, 22px); /* 제목 크기 조정 */
     }
-
+    
     .overlay-text p {
         font-size: clamp(11px, 2vw + 1px, 15px); /* 본문 크기 조정 */
     }
