@@ -348,15 +348,12 @@ main {
         height: 100px; /* 헤더 높이 조정 */
         padding: 0px; /* 패딩 조정 */
     }
-    body {
-        overflow-y: auto;
-    }
+
     .index-logo h1 {
         font-size: clamp(20px, 3vw + 5px, 30px); /* 제목 크기 조정 */
     }
     main {
         padding-top: 100px;
-        overflow-y: auto;
     }
     .nav {
         flex-direction: column; /* 수직 정렬로 변경 */
