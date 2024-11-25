@@ -399,16 +399,16 @@ main {
     .profile-image img {
         width: 80px; /* 프로필 이미지 크기 조정 */
         height: 80px; /* 프로필 이미지 크기 조정 */
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     footer p {
-        font-size: clamp(10px, 2vw, 12px); /* 푸터 텍스트 크기 조정 */
-        margin-bottom: 6px;
+        font-size: clamp(8px, 2vw, 12px); /* 푸터 텍스트 크기 조정 */
+        margin-bottom: 4px;
     }
     
     .foot-i-circle {
-        font-size: clamp(10px, 2vw, 12px); /* 푸터 아이콘 크기 조정 */
+        font-size: clamp(8px, 2vw, 12px); /* 푸터 아이콘 크기 조정 */
     }
     #typing-effect .btn {
         margin-top: 80px; /* 버튼 위쪽에 60px의 마진 추가 */
