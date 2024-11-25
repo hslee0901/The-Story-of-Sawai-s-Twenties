@@ -349,7 +349,7 @@ main {
         padding: 0px; /* 패딩 조정 */
     }
     body {
-        overflow: hidden;
+        overflow: auto;
     }
     .index-logo h1 {
         font-size: clamp(20px, 3vw + 5px, 30px); /* 제목 크기 조정 */
