@@ -365,7 +365,7 @@ main {
     .nav-item {
         margin: 5px 0; /* 위아래 간격 조정 */
     }
-
+    
     .nav-link {
         font-size: clamp(14px, 2vw + 2px, 16px); /* 링크 텍스트 크기 조정 */
         padding: 8px 10px; /* 패딩 조정 */
@@ -385,11 +385,11 @@ main {
 
     }
     .overlay-text h2 {
-        font-size: clamp(16px, 3vw + 2px, 23px); /* 제목 크기 조정 */
+        font-size: clamp(15px, 3vw + 2px, 22.5px); /* 제목 크기 조정 */
     }
 
     .overlay-text p {
-        font-size: clamp(13px, 2vw + 1px, 16px); /* 본문 크기 조정 */
+        font-size: clamp(12px, 2vw + 1px, 15.5px); /* 본문 크기 조정 */
     }
 
     .profile-section {
@@ -397,9 +397,9 @@ main {
     }
 
     .profile-image img {
-        width: 80px; /* 프로필 이미지 크기 조정 */
-        height: 80px; /* 프로필 이미지 크기 조정 */
-        margin-top: 30px;
+        width: 78px; /* 프로필 이미지 크기 조정 */
+        height: 78px; /* 프로필 이미지 크기 조정 */
+        margin-top: 32px;
     }
     footer{
         height:65px;
@@ -422,11 +422,11 @@ main {
 
 @media (max-width: 353px) {
     .overlay-text h2 {
-        font-size: clamp(15px, 3vw + 1px, 22px); /* 제목 크기 조정 */
+        font-size: clamp(15px, 3vw + 1px, 21.5px); /* 제목 크기 조정 */
     }
     
     .overlay-text p {
-        font-size: clamp(11px, 2vw + 1px, 15px); /* 본문 크기 조정 */
+        font-size: clamp(11px, 2vw + 1px, 14.5px); /* 본문 크기 조정 */
     }
        header:not(.show) {
         top: 0; /* 항상 보이도록 설정 */
