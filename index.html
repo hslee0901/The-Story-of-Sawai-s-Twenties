@@ -77,8 +77,31 @@
                         <a href="about.html">
                             <img src="./img/profile.jpg" alt="Profile Image">
                         </a>
-                    </div>
-                    <button type="button" class="btn btn-secondary" onclick="location.href = 'about.html'">About Me</button>
+                                </div>
+                    <style>
+                        .custom-btn {
+                          width: 150px; /* 기본 크기 */
+                          height: 45px; /* 기본 크기 */
+                        }
+                      
+                        @media (max-width: 480px) {
+                          .custom-btn {
+                            width: 150px; 
+                            height: auto; /* 높이는 자동으로 조정 */
+                            margin-top: 0px;
+            
+                          }
+                        }
+                        @media (max-width: 353px) {
+                            .custom-btn {
+                              width: 100px; 
+                              height: auto; /* 높이는 자동으로 조정 */
+                              margin-top: 0px;
+              
+                            }
+                          }
+                      </style>
+                    <button type="button" class="btn btn-secondary custom-btn" onclick="location.href = 'about.html'">About Me</button>
                 </div>
             </div>
     </main>
