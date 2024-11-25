@@ -401,11 +401,6 @@ main {
         height: 80px; /* 프로필 이미지 크기 조정 */
         margin-top: 40px;
     }
-    
-    footer {
-        height: 80px; /* 푸터 높이 조정 */
-        position: fixed;
-    }
 
     footer p {
         font-size: clamp(10px, 2vw, 12px); /* 푸터 텍스트 크기 조정 */
