@@ -406,7 +406,8 @@ main {
     }
     
     footer {
-        height: 60px; /* 푸터 높이 조정 */
+        height: 80px; /* 푸터 높이 조정 */
+        position: fixed;
     }
 
     footer p {
