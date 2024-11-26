@@ -420,7 +420,7 @@ main {
 
 }
 
-@media (max-width: 353px) {
+@media (max-width: 320px) {
     .index-logo h1 {
 
         font-size: 27px;
