@@ -397,17 +397,13 @@ main {
     padding-top: 20px;
     margin-top: 34px;
  
-    }
+    
     .main-section p {
         font-size: 15px;
         margin-top: 14px;
 
     }
-    .dropdown-button {
 
-        padding: 5px 5px; /* 패딩 추가 */
-    
-    /* 드롭다운 메뉴 항목 스타일 */
 
 
     .img-biff {
@@ -420,7 +416,7 @@ main {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 353px) {
     .index-logo h1 {
 
         font-size: 27px;
