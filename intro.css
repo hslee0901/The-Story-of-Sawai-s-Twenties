@@ -343,7 +343,6 @@ main {
 }
 
 /* 모바일 버전 */
-/* 모바일 버전 */
 @media (max-width: 480px) {
     .sticky-bar {
         display: none; /* 화면이 480px 이하일 때 스티키바 숨김 */
@@ -355,11 +354,33 @@ main {
         padding-top: 110px;
     }
     .index-logo h1 {
-        font-size: 30px;
+        font-size: clamp(20px, 3vw + 5px, 30px); /* 제목 크기 조정 */
+    }
+  
+    .nav {
+        flex-direction: column; /* 수직 정렬로 변경 */
+        align-items: center; /* 중앙 정렬 */
+    }
+    .dropdown {
+        margin-top: 8px;
+    }
+    .nav-item {
+        margin: 5px 0; /* 위아래 간격 조정 */
+    }
+    
+    .nav-link {
+        font-size: clamp(14px, 2vw + 2px, 16px); /* 링크 텍스트 크기 조정 */
+        padding: 8px 10px; /* 패딩 조정 */
+    }
+    
+    .dropdown-button {
+        font-size: clamp(14px, 2vw + 2px, 16px); /* 드롭다운 버튼 크기 조정 */
+        padding: 6px 10px; /* 패딩 조정 */
     }
     
     header {
         height: 100px; 
+
         padding: 8px 10px; /* 패딩 추가 */
     }
     header:not(.show) {
@@ -369,25 +390,35 @@ main {
     .main-section h1 {
         font-size: 24px; /* 제목 크기 조정 */
         margin-bottom: 8px; /* 하단 여백 */
+
     }
     .main-section h2 {
-        border-top: solid 1px #333333;
-        padding-top: 20px;
-        margin-top: 34px;
+    border-top: solid 1px #333333;
+    padding-top: 20px;
+    margin-top: 34px;
+ 
     }
     .main-section p {
         font-size: 15px;
         margin-top: 14px;
+
     }
     .dropdown-button {
+
         padding: 5px 5px; /* 패딩 추가 */
-    }
+    
+    /* 드롭다운 메뉴 항목 스타일 */
+
+
     .img-biff {
+
         margin-top: 30px; /* 이미지 위와 아래에 간격 추가 */
         margin-bottom: 30px;
     }
-}
+        
 
+
+}
 
 @media (max-width: 353px) {
     .index-logo h1 {
@@ -420,5 +451,4 @@ main {
         font-size: clamp(10px, 2vw, 12px); /* 푸터 아이콘 크기 조정 */
     }
 }
-
-
+}
