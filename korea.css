@@ -344,14 +344,32 @@ main {
         padding-top: 110px;
     }
     .index-logo h1 {
-
-        font-size: 30px;
-
+        font-size: clamp(20px, 3vw + 5px, 30px); /* 제목 크기 조정 */
+    }
+  
+    .nav {
+        flex-direction: column; /* 수직 정렬로 변경 */
+        align-items: center; /* 중앙 정렬 */
+    }
+    .dropdown {
+        margin-top: 8px;
+    }
+    .nav-item {
+        margin: 5px 0; /* 위아래 간격 조정 */
+    }
+    
+    .nav-link {
+        font-size: clamp(14px, 2vw + 2px, 16px); /* 링크 텍스트 크기 조정 */
+        padding: 8px 10px; /* 패딩 조정 */
+    }
+    
+    .dropdown-button {
+        font-size: clamp(14px, 2vw + 2px, 16px); /* 드롭다운 버튼 크기 조정 */
+        padding: 6px 10px; /* 패딩 조정 */
     }
     
     header {
         height: 100px; 
-
         padding: 8px 10px; /* 패딩 추가 */
     }
     header:not(.show) {
@@ -374,13 +392,6 @@ main {
         margin-top: 14px;
 
     }
-    .dropdown-button {
-
-        padding: 5px 5px; /* 패딩 추가 */
-    
-    /* 드롭다운 메뉴 항목 스타일 */
-
-}
 }
 @media (max-width: 353px) {
     .index-logo h1 {
@@ -406,5 +417,4 @@ main {
         }
 
 }
-
 
