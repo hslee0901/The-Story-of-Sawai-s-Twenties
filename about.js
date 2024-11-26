@@ -14,3 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
         dropdownContent.style.display = "none";
     });
 });
+function updateImage() {
+    const imgElement = document.getElementById('profileImage');
+    if (window.innerWidth <= 1000) {
+        imgElement.src = './img/sawai-profile-row.jpg';
+    } else {
+        imgElement.src = './img/sawai-profile-col.jpg';
+    }
+}
+
+// 초기 실행
+updateImage();
+
+// 리사이즈 이벤트에 추가
+window.addEventListener('resize', updateImage);
