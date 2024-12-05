@@ -16,7 +16,7 @@ body {
 header {
     height: 150px; 
     flex-shrink: 0; /* 헤더는 고정 크기 유지 */
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
     display: flex; /* flex로 변경 */
     flex-direction: column; /* 세로 방향으로 정렬 */
     justify-content: center; 
@@ -26,6 +26,7 @@ header {
     top: 0; /* 초기 위치 설정 */
     left: 0; /* 왼쪽에 고정 */
     width: 100%; 
+    transition: top 0.3s ease-in-out;
     z-index: 1000;
 }
 header.show {
@@ -35,6 +36,7 @@ header.show {
 header:not(.show) {
     top: -100px; /* 헤더 높이만큼 숨김 */
 }
+
 
 .index-nav {
     text-align: center; /* 중앙 정렬 */
