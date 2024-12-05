@@ -1,39 +1,27 @@
-// 위로 스크롤 할 때 헤더 보이게 하는 기능
-
 document.addEventListener("DOMContentLoaded", function () {
-
     const header = document.querySelector("header");
-
     let lastScrollY = window.scrollY;
-
-
+    const threshold = 30; // 최소 스크롤 변화값
 
     // 페이지를 로드할 때 헤더를 보이게 설정
-
     header.classList.add("show");
 
-
-
     window.addEventListener("scroll", function () {
+        const scrollDiff = Math.abs(window.scrollY - lastScrollY);
 
-        if (window.scrollY > lastScrollY && window.scrollY > 0) {
+        if (scrollDiff > threshold) {
+            if (window.scrollY > lastScrollY && window.scrollY > 0) {
+                // 스크롤 다운
+                header.classList.remove("show");
+            } else if (window.scrollY < lastScrollY) {
+                // 스크롤 업
+                header.classList.add("show");
+            }
 
-            // 스크롤 다운
-
-            header.classList.remove("show");
-
-        } else if (window.scrollY < lastScrollY) {
-
-            // 스크롤 업
-
-            header.classList.add("show");
-
+            // 마지막 스크롤 위치 업데이트
+            lastScrollY = window.scrollY;
         }
-
-        lastScrollY = window.scrollY;
-
     });
-
 });
 
 $(document).ready(function(){
