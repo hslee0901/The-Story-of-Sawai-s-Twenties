@@ -16,7 +16,7 @@ body {
 header {
     height: 150px; 
     flex-shrink: 0; /* 헤더는 고정 크기 유지 */
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
     display: flex; /* flex로 변경 */
     flex-direction: column; /* 세로 방향으로 정렬 */
     justify-content: center; 
