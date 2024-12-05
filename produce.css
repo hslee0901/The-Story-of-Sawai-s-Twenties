@@ -7,7 +7,9 @@ body {
     height: 100vh; /* 전체 화면 높이 */
     margin: 0;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-
+    background-repeat: no-repeat;
+    background-size: cover; /* 배경이 화면 크기에 맞게 늘어남 */
+    background-attachment: fixed; /* 배경 고정 */
 }
 
 /* 헤더 시작 */
