@@ -307,7 +307,7 @@ main {
 
 .card .back p{
     letter-spacing: 1px;
-    margin: 15px;
+    margin: 10px;
     font-size: 23px;
     text-align: left; /* 왼쪽 정렬 */
 }
