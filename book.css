@@ -293,6 +293,7 @@ prev-btn i, next-btn {
 }
 
 main {
+    margin-top: 15px;
     flex: 1; /* 메인 콘텐츠는 남은 공간을 차지 */
     display: flex; /* Flexbox 사용 */
     justify-content: center; /* 수평 중앙 정렬 */
