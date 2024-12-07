@@ -17,20 +17,10 @@ header {
     justify-content: center; 
     align-items: center; 
     padding: 10px 20px; /* 패딩 추가 */
-    position: fixed; 
-    top: 0; /* 초기 위치 설정 */
-    left: 0; /* 왼쪽에 고정 */
-    width: 100%; 
-    transition: top 0.3s ease-in-out;
+    width: 100%;
     z-index: 1000;
 }
-header.show {
-    top: 0; /* 보일 때의 위치 */
-}
 
-header:not(.show) {
-    top: -100px; /* 헤더 높이만큼 숨김 */
-}
 .index-logo a{
     text-decoration: none; /* 밑줄 제거 */
      color: inherit;
