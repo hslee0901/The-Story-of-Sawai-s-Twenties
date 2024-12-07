@@ -222,7 +222,7 @@ main {
 }
 
 .overlay-text {
-    margin-top: 100px;
+    margin-top: 120px;
     font-family: 'Klee One', sans-serif; /* Klee One 폰트 적용 */
     position: absolute; /* 절대 위치 설정 */
     top: 50%; /* 수직 중앙 정렬 */
@@ -231,7 +231,7 @@ main {
     color: white; /* 텍스트 색상 */
     text-align: center; /* 텍스트 중앙 정렬 */
     z-index: 1; /* 텍스트가 이미지 위에 오도록 설정 */
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     opacity: 0; /* 초기 투명도 설정 */
     animation: fadeIn 2s forwards; /* 서서히 나타나는 애니메이션 */
 }
