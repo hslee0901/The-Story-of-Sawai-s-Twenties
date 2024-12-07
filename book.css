@@ -9,15 +9,15 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
     overflow: hidden;
+    background-color: rgb(10, 10, 4);
     margin: 0;
 }
 header {
     height: 150px; 
     flex-shrink: 0; /* 헤더는 고정 크기 유지 */
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-color: rgb(10, 10, 4);
     display: flex; /* flex로 변경 */
     flex-direction: column; /* 세로 방향으로 정렬 */
     justify-content: center; 
@@ -25,10 +25,6 @@ header {
     padding: 10px 20px; /* 패딩 추가 */
     width: 100%; 
     z-index: 0;
-}
-.index-logo a{
-    text-decoration: none; /* 밑줄 제거 */
-     color: inherit;
 }
 
 
@@ -107,22 +103,22 @@ header {
     margin: 0 10px; /* 양쪽 간격을 10px씩 추가 */
 }
 .nav-item:hover{
-    color: #8A2BE2; /* 마우스 오버 시 색상 변경 */
+    color: #ff9e50; /* 마우스 오버 시 색상 변경 */
 }
 
 .nav-link {
-    color: #333333; /* 기본 텍스트 색상 */
+    color: #f9e79f; /* 기본 텍스트 색상 */
     text-decoration: none; /* 밑줄 제거 */
     padding: 10px 15px; /* 패딩 추가 */
 }
 
 .nav-link i {
     font-size: 24px; /* 아이콘 크기 조정 */
-    color: #333333; /* 아이콘 색상 조정 */
+    color: #f9e79f; /* 아이콘 색상 조정 */
     margin-right: 5px; /* 아이콘과 텍스트 간의 간격 조정 */
 }
 .nav-link i:hover{
-    color: #8A2BE2; /* 마우스 오버 시 색상 변경 */
+    color: #ff9e50; /* 마우스 오버 시 색상 변경 */
 }
 
 .nav-item .nav-link {
@@ -131,7 +127,7 @@ header {
 }
 
 .nav-link:hover {
-    color: #8A2BE2; /* 마우스 오버 시 색상 변경 */
+    color: #ff9e50; /* 마우스 오버 시 색상 변경 */
 }
 
 .nav-link.active {
@@ -142,12 +138,12 @@ header {
     align-items: center;
     justify-content: center; 
     margin-bottom: 5px;
-    border-bottom: solid 1px #333333; /* 기존 1px 선 */
+    border-bottom: solid 1px #f9e79f; /* 기존 1px 선 */
     width: 100%; /* 선을 전체 너비로 늘리기 */
 }
 
 .index-logo h1 {
-    color: #333333;
+    color: #f9e79f;
     font-size: 50px;
     line-height: normal;
     font-family: "Bagel Fat One", system-ui;
@@ -156,12 +152,13 @@ header {
 }
 
 footer {
-    padding-top: 16px;
-    height: 80px; 
+    padding-top: 10px;
+    height: 70px; 
     flex-shrink: 0; /* 푸터는 고정 크기 유지 */
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    color: #333333;
+    background-color: rgb(10, 10, 4);
+    color: #f9e79f;
     width: 100%;
+    border-top: solid 1PX #f9e79f;
 }
 
 footer p {
@@ -267,18 +264,19 @@ button:focus {
 
 /* 버튼에 마우스를 올렸을 때 아이콘의 색상 지정 */
 button:hover i {
-    color: rgb(0, 195, 255);
+    opacity: 0.8;
 }
 
 /* 아이콘 설정 */
 prev-btn i, next-btn {
     font-size: 50px;
-    color: rgb(84, 109, 88);
+    color: #ff9e50;
 }
 
 /* paper stack order 배열 */
 #p1 {
     z-index: 3;
+    
 }
 #p2 {
     z-index: 2;
