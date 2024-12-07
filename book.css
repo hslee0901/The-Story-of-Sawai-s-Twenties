@@ -27,7 +27,8 @@ header {
     z-index: 0;
 }
 .index-logo a{
-
+    text-decoration: none; /* 밑줄 제거 */
+     color: inherit;
 }
 
 
