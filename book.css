@@ -27,21 +27,11 @@ header {
     justify-content: center; 
     align-items: center; 
     padding: 10px 20px; /* 패딩 추가 */
-    position: fixed; 
-    top: 0; /* 초기 위치 설정 */
-    left: 0; /* 왼쪽에 고정 */
     width: 100%; 
-    transition: top 0.3s ease-in-out;
     z-index: 1000;
 }
 
-header.show {
-    top: 0; /* 보일 때의 위치 */
-}
 
-header:not(.show) {
-    top: -100px; /* 헤더 높이만큼 숨김 */
-}
 /* 드롭다운 메뉴 스타일 */
 .dropdown {
     display: none; /* 기본적으로 드롭다운 숨김 */
@@ -304,7 +294,7 @@ prev-btn i, next-btn {
 
 main {
     flex: 1; /* 메인 콘텐츠는 남은 공간을 차지 */
-    padding-top: 170px; /* 헤더 크기만큼 패딩 추가 */
+    margine-top: 20px
     display: flex; /* Flexbox 사용 */
     justify-content: center; /* 수평 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
