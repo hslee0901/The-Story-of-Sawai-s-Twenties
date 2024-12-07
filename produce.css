@@ -11,6 +11,10 @@ body {
     background-size: cover; /* 배경이 화면 크기에 맞게 늘어남 */
     background-attachment: fixed; /* 배경 고정 */
 }
+.index-logo a{
+    text-decoration: none; /* 밑줄 제거 */
+     color: inherit;
+}
 
 /* 헤더 시작 */
 header {
