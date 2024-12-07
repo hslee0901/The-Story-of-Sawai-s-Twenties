@@ -76,7 +76,7 @@ header {
 }
 
 
-
+@media (max-width: 1223px) {
 /* 드롭다운 메뉴 스타일 */
 .dropdown {
     display: none; /* 기본적으로 드롭다운 숨김 */
@@ -120,6 +120,7 @@ header {
 }
 .dropdown-button:hover {
     opacity: 0.8; /* 버튼을 눌렀을 때 투명도 설정 */
+}
 }
 
 /* 미디어 쿼리: 화면 크기가 963px 이하일 때 */
