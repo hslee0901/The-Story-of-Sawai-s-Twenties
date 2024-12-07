@@ -14,10 +14,6 @@ body {
     overflow: hidden;
     margin: 0;
 }
-.index-logo a{
-    text-decoration: none; /* 밑줄 제거 */
-     color: inherit;
-}
 header {
     height: 150px; 
     flex-shrink: 0; /* 헤더는 고정 크기 유지 */
@@ -28,7 +24,7 @@ header {
     align-items: center; 
     padding: 10px 20px; /* 패딩 추가 */
     width: 100%; 
-    z-index: 1000;
+    z-index: 0;
 }
 
 
@@ -78,7 +74,7 @@ header {
 }
 
 /* 미디어 쿼리: 화면 크기가 963px 이하일 때 */
-@media (max-width: 1250px) {
+@media (max-width: 1086px) {
     .index-nav {
         display: none; /* 기존 nav 숨김 */
     }
@@ -195,7 +191,6 @@ footer i {
 
 /* 부모클래스 */
 .book {
-    margine-top: 20px
     position: relative;
     width: 900px;
     height: 660px;
