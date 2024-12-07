@@ -24,6 +24,13 @@ header {
     transition: top 0.3s ease-in-out;
     z-index: 1000;
 }
+header.show {
+    top: 0; /* 보일 때의 위치 */
+}
+
+header:not(.show) {
+    top: -100px; /* 헤더 높이만큼 숨김 */
+}
 .index-logo a{
     text-decoration: none; /* 밑줄 제거 */
      color: inherit;
@@ -79,13 +86,7 @@ header {
     font-weight: bold; /* 활성화된 링크 강조 */
 }
 
-header.show {
-    top: 0; /* 보일 때의 위치 */
-}
 
-header:not(.show) {
-    top: -100px; /* 헤더 높이만큼 숨김 */
-}
 /* 드롭다운 메뉴 스타일 */
 .dropdown {
     display: none; /* 기본적으로 드롭다운 숨김 */
