@@ -206,8 +206,8 @@ main {
 
 .profile-section {
     text-align: center; /* 가운데 정렬 */
-    margin-top: 50px; /* 위쪽 간격 */
-    margin-bottom: 30px;
+    margin-top: 30px; /* 위쪽 간격 */
+    margin-bottom: 10px;
 }
 
 /* 원형 이미지 */
