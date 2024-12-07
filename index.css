@@ -184,7 +184,6 @@ footer i {
 /* 메인 시작 */
 main {
     flex: 1; /* 메인 콘텐츠는 남은 공간을 차지 */
-    padding-top: 150px; /* 헤더 크기만큼 패딩 추가 */
     display: flex;
 }
 /* 메인 끝 */
