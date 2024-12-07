@@ -195,6 +195,7 @@ footer i {
 
 /* 부모클래스 */
 .book {
+    margine-top: 20px
     position: relative;
     width: 900px;
     height: 660px;
@@ -294,7 +295,6 @@ prev-btn i, next-btn {
 
 main {
     flex: 1; /* 메인 콘텐츠는 남은 공간을 차지 */
-    margine-top: 20px
     display: flex; /* Flexbox 사용 */
     justify-content: center; /* 수평 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
