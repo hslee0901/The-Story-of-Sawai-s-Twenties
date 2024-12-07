@@ -123,7 +123,7 @@ header {
 
 
 /* 미디어 쿼리: 화면 크기가 1223px 이하일 때 */
-@media (max-width: 1223px) {
+@media (max-width: 1250px) {
     .index-nav {
         display: none; /* 기존 nav 숨김 */
     }
