@@ -222,6 +222,7 @@ main {
 }
 
 .overlay-text {
+    margin-top: 50px;
     font-family: 'Klee One', sans-serif; /* Klee One 폰트 적용 */
     position: absolute; /* 절대 위치 설정 */
     top: 50%; /* 수직 중앙 정렬 */
