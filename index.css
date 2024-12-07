@@ -222,7 +222,7 @@ main {
 }
 
 .overlay-text {
-    margin-top: 50px;
+    margin-top: 70px;
     font-family: 'Klee One', sans-serif; /* Klee One 폰트 적용 */
     position: absolute; /* 절대 위치 설정 */
     top: 50%; /* 수직 중앙 정렬 */
@@ -376,7 +376,8 @@ main {
         height: 100%; /* 비율 유지 */
     }
     .overlay-text {
-        margin-top: 36px;
+        
+        margin-top: 40px;
 
     }
     .overlay-text h2 {
