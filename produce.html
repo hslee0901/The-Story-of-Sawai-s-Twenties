@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Sawai 마무리</title>
+    <title>Master Sawaiの제작자</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
@@ -160,6 +160,15 @@
             <p> 2024 マスター. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('flip');
+            });
+        });
+    </script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <script src="./sc-drop.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
