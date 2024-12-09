@@ -318,13 +318,21 @@ main {
 }
 
 
-.card:hover .front{
+.card.flip .front{
     transform: perspective(600px) rotateY(180deg);
 }
-.card:hover .back {
+
+.card.flip .back {
     transform: perspective(600px) rotateY(360deg);
 }
 
+.card:hover .front{
+    opacity: 0.8;
+}
+
+.card:hover .back {
+    opacity: 0.8;
+}
 @media (max-width: 480px) {
 
     .index-logo h1 {
