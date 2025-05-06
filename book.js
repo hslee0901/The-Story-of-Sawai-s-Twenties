@@ -69,11 +69,12 @@ function goPrevPage() {
             case 3:
                 paper2.classList.remove("flipped");
                 paper2.style.zIndex = 2;
+                paper3.style.zIndex = 1;
                 break;
             case 4:
                 openBook();
                 paper3.classList.remove("flipped");
-                paper3.style.zIndex = 1;
+        
                 break;
             default:
                 throw new Error("unknown state");
